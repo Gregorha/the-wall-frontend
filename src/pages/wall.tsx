@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Wall from '../features/wall/views/wall';
 import { Link, useHistory } from 'react-router-dom';
+import MenuIcon from '../shared/menuIcon';
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
@@ -13,6 +14,11 @@ const useStyles = makeStyles((theme) => ({
   },
   toolbar: {
     justifyContent: 'space-between',
+    maxHeight: '70px',
+    overflow: 'hidden',
+  },
+  icon: {
+    height: '100px',
   },
 }));
 
@@ -41,7 +47,7 @@ const WallPage = () => {
         <Toolbar className={classes.toolbar}>
           <Typography variant="h6" color="inherit" noWrap>
             <Link to="/" style={{ textDecoration: 'none', color: 'black' }}>
-              The Wall
+              <MenuIcon className={classes.icon} />
             </Link>
           </Typography>
           <Button color="primary" variant="outlined" onClick={handleLogin}>
