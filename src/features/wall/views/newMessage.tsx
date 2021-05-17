@@ -10,8 +10,8 @@ import React, { Dispatch, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { Alert } from '@material-ui/lab';
 import { newMessageService } from '../newMessageService';
-import { UserLocalStorage } from '../../../routes';
-import { getMessagesService, Message } from '../wallService';
+import { Message } from '../wallService';
+import { UserLocalStorage } from '../../signIn/interface';
 
 const useStyles = makeStyles({
   form: {

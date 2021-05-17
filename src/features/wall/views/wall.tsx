@@ -8,8 +8,8 @@ import Container from '@material-ui/core/Container';
 import { getMessagesService, Message } from '../wallService';
 import { CardHeader, CircularProgress, Divider, Grid } from '@material-ui/core';
 import { Alert } from '@material-ui/lab';
-import { isAuthenticated } from '../../../routes';
 import NewMessageForm from './newMessage';
+import { isAuthenticated } from '../../../shared/utils/privateRoute';
 
 const useStyles = makeStyles((theme) => ({
   heroContent: {
