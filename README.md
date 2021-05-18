@@ -12,7 +12,7 @@ In order to run the api locally you will need to set the following properties in
     REACT_APP_API_URL=[Url of the api that the app will use]
 
 ## Design pattern
-Follows feature/resposabily pattern
+Follows feature/responsibility pattern
 
 <img src="src/assets/folderStructure.png">
 
